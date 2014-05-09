@@ -6,3 +6,22 @@ sudo apt-get install python-virtualenv
 sudo pip install virtualenv
 
 los commando easy_install y pip sirven para realizer instalaciones de paquetes
+
+-- instalacion de git
+sudo apt-get install git
+
+-- clonar
+git clone "ruta .git"
+
+-- Crear un virtualenv
+virtualenv my_project
+
+-- Activar virtualenv
+source my_project/bin/activate
+
+-- Desactivar virtualenv
+(my_project) $ desactive
+
+--
+ Instalar Django
+pip install django
