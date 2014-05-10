@@ -25,3 +25,23 @@ source my_project/bin/activate
 --
  Instalar Django
 pip install django
+
+-- Project Django
+django-admin.py startproject myproject
+
+-- Instalar South (Using South for Database Migrations)
+pip install south
+
+-- Ejecutar django
+python manage.py runserver
+python manage.py runserver 8080
+python manage.py runserver 0.0.0.0:8000
+
+-- Crear app en django
+python manage.py startapp name_app
+
+-- Crear modelo
+python manage.py sql name_app
+
+-- Time zone support is active
+pip install pytz
