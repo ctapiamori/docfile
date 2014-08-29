@@ -1,0 +1,59 @@
+Instalacion en Linux
+
+# Instalar Python
+sudo apt-get install python2.7
+
+# Instalar las herramientas de Python
+sudo apt-get install python-setuptools
+
+# Instalar comando pip para instalacion de componentes
+sudo easy_install pip
+ó
+sudo apt-get install python-pip
+
+# Instalar comando de virtualizacion
+sudo pip install virtualenv
+ó
+sudo apt-get install python-virtualenv
+
+# Crear espacio virtual
+virtualenv nombre_virtual
+-- Ejemplo: hotelproject_env
+
+# Activar el espacio virtual
+source nombre_virtual/bin/active
+
+# Desactivar el espacio virtual
+(nombre_virtual) $ desactive
+
+# Instalar Django
+pip install django
+
+# Otras herramientas opcionales (importantes)
+# Instalar migrador de datos
+pip install south
+
+# Instalar rest framework
+pip install djangorestframework
+
+# Instalar diseños de Administrador
+pip install django-admin-bootstrapped
+ó
+pip install django-grappelli
+
+# Iniciando Django
+# Crear proyecto
+django-admin.py startproject nombre_proyecto
+-- Ejemplo: hotelproject
+
+# Crear app en Django
+python manage.py startapp nombre_aplicacion
+--Ejemplo: reservaciones
+
+# Correr la aplicacion
+python manage.py runserver
+
+# Crear modelos
+python manage.py syncdb
+
+
