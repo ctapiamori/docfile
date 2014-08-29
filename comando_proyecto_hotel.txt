@@ -24,7 +24,7 @@ virtualenv nombre_virtual
 source nombre_virtual/bin/active
 
 # Desactivar el espacio virtual
-(nombre_virtual) $ desactive
+(nombre_virtual) $ deactivate
 
 # Instalar Django
 pip install django
@@ -53,7 +53,15 @@ python manage.py startapp nombre_aplicacion
 # Correr la aplicacion
 python manage.py runserver
 
-# Crear modelos
+# Crear modelos (Base de datos)
 python manage.py syncdb
 
+# Uso de south
+# Si ya se tiene la aplicacion desarrollada usar el siguiente comando
+python manage.py convert_to_shout nombre_aplicacion
 
+# Resetear base de datos (no recomendable elimina todo)
+python manage.py flush
+
+# Ver script para los modelos de la aplicacion
+python manage.py sql nombre_aplicacion
