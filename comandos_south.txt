@@ -1,0 +1,13 @@
+Migracion de datos en django usanso SOUTH
+
+#Instalacion de south
+$ pip install south
+
+#Convertir una aplicacion a south
+$ python manage.py convert_to_south nombre_aplicacion
+
+#Cuando se realice un cambio en el modelo se debe ejecutar el comando
+$ python manage.py schemamigration nombre_aplicacion --auto
+
+#Despues para realizar el cambio usar el siguiente comando
+$ python manage.py migrate nombre_aplicacion
