@@ -1,0 +1,5 @@
+Buscar puertos abiertos:
+sudo netstat -lnp
+
+Eliminar puerto
+sudo kill -9 {PID}
