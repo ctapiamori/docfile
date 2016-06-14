@@ -45,3 +45,12 @@ python manage.py sql name_app
 
 -- Time zone support is active
 pip install pytz
+
+
+
+#Componentes
+--Interface Python
+sudo apt-get install ipython
+
+--Conexion con MySql
+sudo apt-get install python-mysqldb

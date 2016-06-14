@@ -1,0 +1,11 @@
+1) Agrega el PPA de Ninja-IDE:
+
+sudo apt-add-repository ppa:ninja-ide-developers/daily
+
+2) Sincroniza el índice de actualizaciones:
+
+sudo apt-get update
+
+3) Instala Ninja-IDE:
+
+sudo apt-get install ninja-ide

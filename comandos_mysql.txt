@@ -1,0 +1,37 @@
+- Conectarse al MySql
+mysql -u [nombre usuario] -p
+
+- Ver bases de datos
+SHOW DATABASES;
+
+- Crear base de datos
+CREATE DATABASE [nombre de base de datos];
+
+- Crear Usuario
+CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena';
+
+- Asignar Privilegios
+GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost';
+
+ALL PRIVILEGES: como mencionamos previamente esto permite a un usuario de MySQL acceder a todas las bases de datos asignadas en el sistema.
+CREATE: permite crear nuevas tablas o bases de datos.
+DROP: permite eliminar tablas o bases de datos.
+DELETE: permite eliminar registros de tablas.
+INSERT: permite insertar registros en tablas.
+SELECT: permite leer registros en las tablas.
+UPDATE: permite actualizar registros seleccionados en tablas.
+GRANT OPTION: permite remover privilegios de usuarios.
+
+GRANT [permiso] ON [nombre de base de datos].[nombre de tabla] TO ‘[nombre de usuario]’@'localhost’;
+
+- Remover Privilegios
+REVOKE [permiso] ON [nombre de base de datos].[nombre de tabla] FROM ‘[nombre de usuario]’@‘localhost’;
+
+- Refrescar privilegios
+FLUSH PRIVILEGES;
+
+- Eliminar usuario
+DROP USER ‘usuario_prueba’@‘localhost’;
+
+- Seleccionar una base de datos
+user [nombre de base de datos]
