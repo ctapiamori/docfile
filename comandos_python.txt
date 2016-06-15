@@ -46,6 +46,21 @@ python manage.py sql name_app
 -- Time zone support is active
 pip install pytz
 
+--Django MySqlClient
+pip install django mysqlclient
+
+setting.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
 
 
 #Componentes
@@ -54,3 +69,8 @@ sudo apt-get install ipython
 
 --Conexion con MySql
 sudo apt-get install python-mysqldb
+
+sudo apt-get install libmysqlclient-dev
+
+
+
