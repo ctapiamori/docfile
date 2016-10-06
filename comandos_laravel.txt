@@ -1,0 +1,34 @@
+# Instalar Composer
+
+# Ejecutar Composer
+composer install
+
+# Generar Key (Error: No supported encrypter found. The cipher and / or key length are invalid)
+php artisan key:generate
+
+# Configurara dato de conexion
+- editar el archivo .env
+- modificar los datos de conexion
+
+# Limpiar configuracion
+php artisan config:clear
+
+# Instalar migrate
+php artisan migrate:install
+
+# Crear tablas usando migraciones
+laravel <5
+php artisan migrate:make create_[nombre de tabla]_table
+
+laravel5
+php artisan make:migratation create_[nombre de tabla]_table --create=[nombre de tabla]
+
+# Ejecutar la migracion
+php artisan migrate
+
+# Create Modelos
+php artisan make:model [nombre de modelo]
+
+
+# Auditoria
+composer require owen-it/laravel-auditing

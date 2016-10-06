@@ -35,3 +35,10 @@ DROP USER ‘usuario_prueba’@‘localhost’;
 
 - Seleccionar una base de datos
 user [nombre de base de datos]
+
+- Generar Backup
+$ mysqldump -u root -p[root_password] [database_name] > dumpfilename.sql
+
+- Restaurar Backup
+$ mysql -u root -p[root_password] [database_name] < dumpfilename.sql
+

@@ -1,5 +1,29 @@
-Buscar puertos abiertos:
+# Buscar puertos abiertos:
 sudo netstat -lnp
 
-Eliminar puerto
+# Eliminar puerto
 sudo kill -9 {PID}
+
+# Instalar PhpMyAdmin
+sudo apt-get install phpadmin php-mbstring php-gettext
+
+(despues de instalar resetear el apache: sudo service apache2 restart)
+
+
+
+
+
+# Instalar Node
+sudo apt-get install nodejs-legacy
+
+
+
+
+
+
+# Laravel
+- instalar composer
+- ejecutar composer
+composer install
+- ejecutar key
+php artisan key:generate
